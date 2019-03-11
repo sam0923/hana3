@@ -14,21 +14,18 @@
         <li><a href="5.html">database</a></li>
     </ol>
     <div id="article">
-        <input type="text" onchange="alert('changed');">
-        <input type="button" value="night">
         <input type="button" value="night" onclick="
-            var body = document.querySelector('body');
-            body.style.backgroundColor = 'black';
-            body.style.color = 'white';
-        ">
-        <input type="button" value="day" onclick="
-            var body = document.querySelector('body');
-            body.style.backgroundColor = 'white';
-            body.style.color = 'black';
-        ">
-
-
-
+        if(this.value==='night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        this.value='day';}      
+        else{
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        this.value='night';
+        }">
+         
+        
     <h2>Database</h2>
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quae pariatur, labore itaque voluptatem corrupti a, quis quos facere sit, beatae illum? Tenetur, id vitae. Omnis nemo illo saepe fugiat.
     <div id="disqus_thread"></div>
